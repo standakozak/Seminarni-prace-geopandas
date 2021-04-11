@@ -1,1 +1,1 @@
-# Seminarni-prace-geopandas
+# Seminární práce
