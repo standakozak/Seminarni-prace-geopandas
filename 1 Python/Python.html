@@ -14375,7 +14375,7 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hodnoty v Pythonu mohou mít různé typy</span>
@@ -14384,12 +14384,56 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 <span class="n">pravda</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># Pravdivostni hodnota (True, False)</span>
 <span class="n">nic</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Někdy je vhodné mít hodnotu, která neobsahuje nic</span>
 
+<span class="c1"># Převod mezi druhy</span>
+<span class="nb">int</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Seznamy</span>
 <span class="n">seznam</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>  <span class="c1"># Pro více hodnot, seznam (list) je ohraničen hranatými závorkami</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">seznam</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># Vypíše hodnotu ze seznamu na pozici 2, tedy &quot;Text&quot; (seznamy jsou číslované od nuly)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">seznam</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Vypíše prvky mezi prvkem 1 (včetně) a prvkem 3 (bez)</span>
 
-<span class="n">slovnik</span> <span class="o">=</span> <span class="p">{</span><span class="mi">70</span><span class="p">:</span> <span class="mf">2.1</span><span class="p">,</span> <span class="s2">&quot;Marek&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Třicet&quot;</span><span class="p">]}</span>  <span class="c1"># Slovníky (dictionary) uchovávají hodnoty označené klíči (ve formátu klíč: hodnota). Nemohou obsahovat dva stejné klíče</span>
-<span class="c1"># Všimněte si, že slovník může obsahovat seznam. Může (stejně jako seznam) ale obsahovat libovolné hodnoty, i jiné slovníky.</span>
-<span class="n">slovnik</span><span class="p">[</span><span class="s2">&quot;Marek&quot;</span><span class="p">]</span>  <span class="c1"># Vypíše [5, 1, &quot;Třicet&quot;], protože tato hodnota má klíč &quot;Marek&quot;</span>
+<span class="c1"># Vnořené seznamy</span>
+<span class="n">vn_seznam</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
+    <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="p">[],</span> <span class="kc">False</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1034</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">vn_seznam</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">:]</span>  <span class="c1"># Vybere ze seznamu prvek 1 [False, True, [], False] a z něj vybere všechny prvky od prvku 2</span>
 </pre></div>
 
      </div>
@@ -14410,6 +14454,7 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Text
+[2, &#39;Text&#39;]
 </pre>
 </div>
 </div>
@@ -14417,13 +14462,54 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[5, 1, &#39;Třicet&#39;]</pre>
+<pre>[[], False]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Slovníky (dictionary) uchovávají hodnoty označené klíči (ve formátu klíč: hodnota). Nemohou obsahovat dva stejné klíče</span>
+
+<span class="n">slovnik</span> <span class="o">=</span> <span class="p">{</span><span class="mi">70</span><span class="p">:</span> <span class="mf">2.1</span><span class="p">,</span> <span class="s2">&quot;Marek&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;Třicet&quot;</span><span class="p">]}</span>  
+<span class="c1"># Všimněte si, že slovník může obsahovat seznam. Může (stejně jako seznam) ale obsahovat jakékoliv hodnoty, i jiné slovníky.</span>
+<span class="n">slovnik</span><span class="p">[</span><span class="s2">&quot;Marek&quot;</span><span class="p">]</span>  <span class="c1"># Vypíše [5, 1, &quot;Třicet&quot;], protože tato hodnota má klíč &quot;Marek&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[5, True, &#39;Třicet&#39;]</pre>
 </div>
 
 </div>
@@ -14440,7 +14526,7 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Kód se nemusí nutně spouštět postupně. To v případě, že jsou jeho části odsazené pomocí mezer.</span>
@@ -14504,12 +14590,121 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Funkce">Funkce<a class="anchor-link" href="#Funkce">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Funkce jsou celky kódu, které se mohou provádět opakovaně</span>
+<span class="c1"># Mohou přijímat různé argumenty (parametry), které ovlivňují jejich činnost</span>
+<span class="c1"># Pomocí klíčového slova return mohou vracet nějaké hodnoty</span>
+
+<span class="k">def</span> <span class="nf">umocni</span><span class="p">(</span><span class="n">cislo</span><span class="p">,</span> <span class="n">mocnina</span><span class="p">):</span>  <span class="c1"># Když se zavolá funkce, dosadí se za argumenty cislo a mocnina konkrétní hodnoty</span>
+    <span class="n">vysledek</span> <span class="o">=</span> <span class="n">cislo</span> <span class="o">**</span> <span class="n">mocnina</span>  <span class="c1">#  ** je v Pythonu znak pro umocnění</span>
+    <span class="k">return</span> <span class="n">vysledek</span>
+
+<span class="n">cislo1</span> <span class="o">=</span> <span class="n">umocni</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Do proměnné uloží výsledek mocnění</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cislo1</span><span class="p">)</span>  <span class="c1"># Vypíše výsledek</span>
+
+<span class="n">cislo2</span> <span class="o">=</span> <span class="n">umocni</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cislo2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>125
+256
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Vytváření objektů </span>
+<span class="kn">from</span> <span class="nn">shapely.geometry.point</span> <span class="kn">import</span> <span class="n">Point</span>
+<span class="n">bod</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>  <span class="c1"># Vytvoření objektu Point</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">bod</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Proměnná bod automaticky získala některé funkce a proměnné</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vzdálenost mezi dvěma body:&quot;</span><span class="p">)</span>
+<span class="n">bod</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1.0
+Vzdálenost mezi dvěma body:
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>4.0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Uk&#225;zka-Jupyter-Notebooku">Uk&#225;zka Jupyter Notebooku<a class="anchor-link" href="#Uk&#225;zka-Jupyter-Notebooku">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># Importování a pojmenování knihovny</span>
@@ -14532,13 +14727,13 @@ Například <a href="https://www.w3schools.com/python/">https://www.w3schools.co
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;matplotlib.lines.Line2D at 0x26afe7d9040&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x25ffc788130&gt;]</pre>
 </div>
 
 </div>
