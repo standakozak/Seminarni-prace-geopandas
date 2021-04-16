@@ -14264,7 +14264,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># konvence pojmenování knihoven</span>
@@ -14293,7 +14293,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tvorba Series pomocí pole ndarray</span>
@@ -14315,7 +14315,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[93]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14337,7 +14337,7 @@ Name: Numbers, dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tvorba DataFrame pomocí slovníku - nejpoužívanější způsob</span>
@@ -14359,7 +14359,7 @@ Name: Numbers, dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[94]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 
@@ -14431,10 +14431,11 @@ Name: Numbers, dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">random_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z této tabulky je prováděn výběr v buňce níže:&quot;</span><span class="p">)</span>
+<span class="n">random_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
     <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)),</span> 
     <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;První&quot;</span><span class="p">,</span> <span class="s2">&quot;Druhý&quot;</span><span class="p">,</span> <span class="s2">&quot;Třetí&quot;</span><span class="p">,</span> <span class="s2">&quot;Čtvrtý&quot;</span><span class="p">],</span> 
     <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Řádek 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Řádek 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Řádek 3&quot;</span><span class="p">]</span>
@@ -14455,7 +14456,19 @@ Name: Numbers, dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Z této tabulky je prováděn výběr v buňce níže:
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -14489,22 +14502,22 @@ Name: Numbers, dtype: float64</pre>
       <th>Řádek 1</th>
       <td>5</td>
       <td>0</td>
-      <td>9</td>
-      <td>5</td>
+      <td>7</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>Řádek 2</th>
-      <td>4</td>
-      <td>8</td>
-      <td>6</td>
       <td>1</td>
+      <td>0</td>
+      <td>8</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>Řádek 3</th>
+      <td>9</td>
+      <td>0</td>
+      <td>2</td>
       <td>1</td>
-      <td>4</td>
-      <td>3</td>
-      <td>4</td>
     </tr>
   </tbody>
 </table>
@@ -14520,13 +14533,13 @@ Name: Numbers, dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pouze v hranatých závorkách se vybírají sloupce</span>
 <span class="c1"># Vrací objekt Series</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Výběr sloupce:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>
+<span class="n">display</span><span class="p">(</span>
     <span class="n">random_df</span><span class="p">[</span><span class="s2">&quot;První&quot;</span><span class="p">]</span>
 <span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>  <span class="c1"># prázdný řádek</span>
@@ -14537,8 +14550,8 @@ Name: Numbers, dtype: float64</pre>
 <span class="c1"># Na rozdíl od iloc[] vrácená tabulka obsahuje i koncové body (tedy v tomto případě řádek 1 i řádek 2)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Použití loc[&quot;Řádek 1&quot;:&quot;Řádek 2&quot;, [&quot;Druhý&quot;, &quot;Čtvrtý&quot;]]:&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(Vybere data z druhého a čtvrtého sloupce, které jsou na prvním až druhém řádku)&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>
-    <span class="n">random_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Řádek 1&quot;</span><span class="p">:</span><span class="s2">&quot;Řádek 2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Druhý&quot;</span><span class="p">,</span> <span class="s2">&quot;Čtvrtý&quot;</span><span class="p">]]</span>
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">random_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Řádek 1&quot;</span><span class="p">:</span><span class="s2">&quot;Řádek 2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Druhý&quot;</span><span class="p">,</span> <span class="s2">&quot;Čtvrtý&quot;</span><span class="p">]]</span>  <span class="c1"># Všechny řádky mezi Řádkem 1 a Řádkem 2 (včetně), ze sloupců výslovně jen Druhý a Čtvrtý</span>
 <span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
 
@@ -14547,8 +14560,19 @@ Name: Numbers, dtype: float64</pre>
 <span class="c1"># Do Iloc se tedy dosazují pouze čísla (čísluje se od nuly)</span>
 <span class="c1"># Neobsahuje koncový bod - v tomto případě nevybere data z druhého řádku</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Použití iloc[0:1, [1, 3]]:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>
+<span class="n">display</span><span class="p">(</span>
     <span class="n">random_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Výběr pomocí podmínky:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pro všechny prvky třetího sloupce určí, jestli odpovídají podmínce (&gt; 5):&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">random_df</span><span class="p">[</span><span class="s2">&quot;Třetí&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tento filtr se dá použít na původní tabulku (vybere všechny řádky, které mají ve třetím sloupci číslo větší než pět):&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">random_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">random_df</span><span class="p">[</span><span class="s2">&quot;Třetí&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -14570,22 +14594,239 @@ Name: Numbers, dtype: float64</pre>
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Výběr sloupce:
-Řádek 1    5
-Řádek 2    4
-Řádek 3    1
-Name: První, dtype: int32
-
-Použití loc[&#34;Řádek 1&#34;:&#34;Řádek 2&#34;, [&#34;Druhý&#34;, &#34;Čtvrtý&#34;]]:
-(Vybere data z druhého a čtvrtého sloupce, které jsou na prvním až druhém řádku)
-         Druhý  Čtvrtý
-Řádek 1      0       5
-Řádek 2      8       1
-
-Použití iloc[0:1, [1, 3]]:
-         Druhý  Čtvrtý
-Řádek 1      0       5
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
+<pre>Řádek 1    5
+Řádek 2    1
+Řádek 3    9
+Name: První, dtype: int32</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+Použití loc[&#34;Řádek 1&#34;:&#34;Řádek 2&#34;, [&#34;Druhý&#34;, &#34;Čtvrtý&#34;]]:
+(Vybere data z druhého a čtvrtého sloupce, které jsou na prvním až druhém řádku)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Druhý</th>
+      <th>Čtvrtý</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Řádek 1</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Řádek 2</th>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+Použití iloc[0:1, [1, 3]]:
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Druhý</th>
+      <th>Čtvrtý</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Řádek 1</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Výběr pomocí podmínky:
+Pro všechny prvky třetího sloupce určí, jestli odpovídají podmínce (&gt; 5):
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
+<pre>Řádek 1     True
+Řádek 2     True
+Řádek 3    False
+Name: Třetí, dtype: bool</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Tento filtr se dá použít na původní tabulku (vybere všechny řádky, které mají ve třetím sloupci číslo větší než pět):
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>První</th>
+      <th>Druhý</th>
+      <th>Třetí</th>
+      <th>Čtvrtý</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Řádek 1</th>
+      <td>5</td>
+      <td>0</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Řádek 2</th>
+      <td>1</td>
+      <td>0</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -14600,7 +14841,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span>
@@ -14693,7 +14934,7 @@ Použití iloc[0:1, [1, 3]]:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -14751,7 +14992,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ukázka statistických a matematických funkcí</span>
@@ -14827,31 +15068,31 @@ Použití iloc[0:1, [1, 3]]:
   <tbody>
     <tr>
       <th>0</th>
-      <td>4</td>
-      <td>4</td>
-      <td>5</td>
-      <td>1</td>
+      <td>9</td>
+      <td>8</td>
+      <td>3</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>2</td>
       <td>3</td>
-      <td>7</td>
-      <td>7</td>
-      <td>5</td>
+      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>3</td>
       <td>2</td>
-      <td>8</td>
-      <td>1</td>
-      <td>2</td>
+      <td>5</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>3</th>
+      <td>7</td>
+      <td>2</td>
+      <td>6</td>
       <td>4</td>
-      <td>1</td>
-      <td>4</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -14907,31 +15148,31 @@ Použití iloc[0:1, [1, 3]]:
   <tbody>
     <tr>
       <th>0</th>
-      <td>4</td>
-      <td>4</td>
-      <td>5</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>7</td>
-      <td>11</td>
-      <td>12</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2</th>
       <td>9</td>
-      <td>19</td>
-      <td>13</td>
+      <td>8</td>
+      <td>3</td>
       <td>8</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>1</th>
+      <td>11</td>
+      <td>11</td>
+      <td>5</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
       <td>13</td>
+      <td>10</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>21</td>
+      <td>15</td>
+      <td>16</td>
       <td>20</td>
-      <td>17</td>
-      <td>9</td>
     </tr>
   </tbody>
 </table>
@@ -14987,31 +15228,31 @@ Použití iloc[0:1, [1, 3]]:
   <tbody>
     <tr>
       <th>0</th>
-      <td>4</td>
-      <td>3</td>
+      <td>9</td>
       <td>2</td>
-      <td>4</td>
+      <td>3</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4</td>
-      <td>7</td>
       <td>8</td>
-      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>3</td>
+      <td>2</td>
       <td>5</td>
-      <td>7</td>
-      <td>1</td>
-      <td>4</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1</td>
+      <td>8</td>
+      <td>3</td>
       <td>5</td>
-      <td>2</td>
-      <td>1</td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>
@@ -15027,7 +15268,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Použití funkce describe</span>
@@ -15109,7 +15350,7 @@ Použití iloc[0:1, [1, 3]]:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[99]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15196,7 +15437,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ukázka načtení dat ze souboru s pevně danou šířkou sloupců</span>
@@ -15219,7 +15460,7 @@ Použití iloc[0:1, [1, 3]]:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[100]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -15340,7 +15581,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Formáty souborů, které GeoPandas podporuje (podporuje i další, například Parquet nebo Feather)</span>
@@ -15361,7 +15602,7 @@ Použití iloc[0:1, [1, 3]]:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[101]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
@@ -15403,7 +15644,7 @@ Použití iloc[0:1, [1, 3]]:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[102]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ukázka načtení vestavěné datové sady v GeoPandas</span>
@@ -15423,7 +15664,7 @@ Použití iloc[0:1, [1, 3]]:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[102]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
 
 
