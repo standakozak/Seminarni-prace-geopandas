@@ -1,7 +1,7 @@
 # Seminární práce – Použití knihovny GeoPandas
 Tento projekt obsahuje zdrojový kód k seminární práci zeměpisného semináře, která představuje knihovnu GeoPandas. Najdete zde kód ke všem obrázkům z práce, ale i zápis některých funkcí, které byly zmíněny jen okrajově (ve složce pro první kapitolu jsou například vysvětleny základy jazyka Python a použití Jupyter Notebooku).\
 \
-Kromě zdrojového kódu je dostupný i text práce. Je ve formátu pdf a pro jeho zobrazení je nutné soubor nejprve stáhnout.
+Kromě zdrojového kódu je dostupný i text práce. Je ve formátu pdf a pro jeho zobrazení je nutné soubor nejprve stáhnout.\
 \
 Pro vyzkoušení Jupyter Notebooku doporučuji např. https://datalore.jetbrains.com/. Nemám ale ověřeno, že v něm jdou všechny soubory z tohoto projektu spustit (především z páté kapitoly).\
 \
